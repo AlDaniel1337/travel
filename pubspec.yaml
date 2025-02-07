@@ -30,6 +30,25 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  
+  #* Gestores de estado
+  get: ^4.6.6
+  flutter_riverpod: ^2.5.1
+  # Peticiones http
+  dio: ^5.5.0+1
+  # Abir url en explorador dentro de flutter
+  url_launcher: ^6.3.1
+  # Shimmer
+  shimmer: ^3.0.0 #!
+  # Validacion de información
+  formz: ^0.8.0  #!
+  # animaciones
+  animate_do: ^3.3.4  #!
+  # Manejar variables de entorno (.env)
+  flutter_dotenv: ^5.1.0  #!
+  # Almacenar información en el dispositivo
+  shared_preferences: ^2.3.5  #!
+
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -51,7 +70,6 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
