@@ -16,7 +16,7 @@ class MenuElement {
 class MenuElements {
   
   final _menuElements = [
-    MenuElement(title: "Pagina principal",  icon: Icons.home),
+    MenuElement(title: "Inicio",            icon: Icons.home),
     MenuElement(title: "Mis reservaciones", icon: Icons.menu_book_rounded),
     MenuElement(title: "Mis cotizaciones",  icon: Icons.calendar_month_rounded),
     MenuElement(title: "Monedero",          icon: Icons.card_giftcard_rounded),

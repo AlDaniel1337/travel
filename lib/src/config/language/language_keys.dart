@@ -11,7 +11,7 @@ class LanguageKeys extends Translations{
   Map< String, Map<String, String>> get keys => {
     // Español
     "es_MX": {
-      "Pagina principal" : "Pagina principal",
+      "Inicio" : "Inicio",
       "Mis reservaciones": "Mis reservaciones",
       "Mis cotizaciones" : "Mis cotizaciones",
       "Monedero"         : "Monedero",
@@ -20,7 +20,7 @@ class LanguageKeys extends Translations{
 
     // Ingles
     "en_US": {
-      "Pagina principal" : "Home",
+      "Inicio"           : "Home",
       "Mis reservaciones": "My reservations",
       "Mis cotizaciones" : "My quotes",
       "Monedero"         : "Wallet",

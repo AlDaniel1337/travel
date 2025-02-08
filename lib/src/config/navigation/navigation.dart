@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:travel_application/src/presentation/pages/home/home.page.dart';
+import 'package:travel_application/src/features/travel/presentation/presentation.dart';
 
 //~ Interface para los elementos del menu
 class MenuOption{
@@ -22,7 +22,10 @@ class Routes{
   /// Listado con las rutas de la app
   static List<GetPage> getRoutes(){    
     List<GetPage> pages = [
-      GetPage(name: HomePage.route, page:() => const HomePage()),
+      GetPage(name: HomePage.route,         page:() => const HomePage()),
+      GetPage(name: ReservationsPage.route, page:() => const ReservationsPage()),
+      GetPage(name: QuotesPage.route,       page:() => const QuotesPage()),
+      GetPage(name: WalletPage.route,       page:() => const WalletPage()),
     ];
     
     return pages;

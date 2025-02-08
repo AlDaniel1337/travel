@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:travel_application/src/config/language/use_languaje.dart';
-import 'package:travel_application/src/presentation/shared/drawers/components/drawer_header.dart';
-import 'package:travel_application/src/presentation/shared/drawers/components/menu_elements.dart';
+import 'package:travel_application/src/shared/drawers/components/drawer_header.dart';
+import 'package:travel_application/src/shared/drawers/components/menu_elements.dart';
 
 //TODO agregar tema
 

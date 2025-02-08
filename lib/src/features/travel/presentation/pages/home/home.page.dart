@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:travel_application/src/config/language/use_languaje.dart';
-import 'package:travel_application/src/presentation/shared/shared.dart';
+import 'package:travel_application/src/shared/shared.dart';
 
 class HomePage extends StatelessWidget {
 
