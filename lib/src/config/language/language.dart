@@ -1,7 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 enum Language {
-  spanish(flag: "", name: "Español", code: "es", extention: "MX"),
+  spanish(flag: "🇲🇽", name: "Español", code: "es", extention: "MX"),
   english(flag: "", name: "English", code: "en", extention: "US");
 
   final String flag;

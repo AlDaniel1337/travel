@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:get/get.dart';
 import 'package:travel_application/src/config/language/language.dart';
+import 'package:travel_application/src/config/plugins/flags.plugin.dart';
 
 /// Menu para selecionar el idioma
 class LanguagePopupMenu extends ConsumerWidget {
@@ -19,7 +20,7 @@ class LanguagePopupMenu extends ConsumerWidget {
         Get.updateLocale( Locale(value.code, value.extention) );
       },
 
-      child: Text(language.code), //TODO: cambiar a flag
+      child: FlagsIcons(languageCode: "${language.code}-${language.extention}"),      
 
       itemBuilder: ( context ) => [
 
@@ -28,6 +29,8 @@ class LanguagePopupMenu extends ConsumerWidget {
           value: value,
           child: Row(
             children: [
+              FlagsIcons(languageCode: "${value.code}-${value.extention}", size: 20,),
+              Spacer(),
               Text( value.name ),
             ],
           ),

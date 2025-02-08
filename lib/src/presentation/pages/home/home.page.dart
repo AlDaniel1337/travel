@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:travel_application/src/config/language/language_popup_menu.dart';
 import 'package:travel_application/src/config/language/use_languaje.dart';
+import 'package:travel_application/src/presentation/shared/shared.dart';
 
 class HomePage extends StatelessWidget {
 
@@ -12,13 +12,12 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return Scaffold(
+
+      drawer: MainDrawer(),
    
       appBar: AppBar(
-         title: LocaleText(text: "Pagina principal"),
-         centerTitle: true,
-         actions: const [
-          LanguagePopupMenu()
-         ],
+        title: LocaleText(text: "Pagina principal"),
+        centerTitle: true,
       ),
    
       body: Center(

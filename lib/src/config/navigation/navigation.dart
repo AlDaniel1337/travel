@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:travel_application/src/presentation/home/home.page.dart';
+import 'package:travel_application/src/presentation/pages/home/home.page.dart';
 
 //~ Interface para los elementos del menu
 class MenuOption{

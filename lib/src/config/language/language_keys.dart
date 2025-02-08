@@ -11,12 +11,20 @@ class LanguageKeys extends Translations{
   Map< String, Map<String, String>> get keys => {
     // Español
     "es_MX": {
-      "Pagina principal": "Pagina principal"
+      "Pagina principal" : "Pagina principal",
+      "Mis reservaciones": "Mis reservaciones",
+      "Mis cotizaciones" : "Mis cotizaciones",
+      "Monedero"         : "Monedero",
+      "Salir"            : "Salir",
     },
 
     // Ingles
     "en_US": {
-      "Pagina principal": "Home"
+      "Pagina principal" : "Home",
+      "Mis reservaciones": "My reservations",
+      "Mis cotizaciones" : "My quotes",
+      "Monedero"         : "Wallet",
+      "Salir"            : "Logout",
     },
   };
 

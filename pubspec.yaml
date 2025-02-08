@@ -38,6 +38,9 @@ dependencies:
   dio: ^5.5.0+1
   # Abir url en explorador dentro de flutter
   url_launcher: ^6.3.1
+  # Iconos de banderas
+  country_flags: ^3.2.0
+
   # Shimmer
   shimmer: ^3.0.0 #!
   # Validacion de información
