@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:travel_application/src/shared/drawers/controller/drawer_controller.dart';
+import 'package:travel_application/src/shared/drawers/main_drawer.dart';
+
+MainDrawerController _mainDrawerController = Get.put(MainDrawerController());
 
 class ReservationsPage extends StatelessWidget {
 
@@ -10,10 +15,8 @@ class ReservationsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
    
-      appBar: AppBar(
-         title: const Text('ReservationsPage'),
-         centerTitle: true,
-      ),
+      drawer: MainDrawer( scaffoldKey: _mainDrawerController.scaffoldKey, ),
+      appBar: AppBar(),
    
       body: const Center(
          child: Text('ReservationsPage'),

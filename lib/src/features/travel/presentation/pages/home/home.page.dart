@@ -9,11 +9,13 @@ class HomePage extends StatelessWidget {
   const HomePage({super.key});
   
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) {    
+    
+    final scaffoldKey = GlobalKey<ScaffoldState>();
 
     return Scaffold(
 
-      drawer: MainDrawer(),
+      drawer: MainDrawer( scaffoldKey: scaffoldKey, ),
    
       appBar: AppBar(
         title: LocaleText(text: "Pagina principal"),

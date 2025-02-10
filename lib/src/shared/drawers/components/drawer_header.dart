@@ -9,21 +9,16 @@ class CustomDrawerHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        Container(
-          padding: EdgeInsets.zero,
-          decoration: const BoxDecoration(
-            color: Colors.blueAccent,
+
+        // Infomación del usuario
+        const UserAccountsDrawerHeader(
+          accountName:  Text("accountName"), 
+          accountEmail: Text("accountEmail"),
+          currentAccountPicture: CircleAvatar(
           ),
-        
-          child: const UserAccountsDrawerHeader(
-            accountName:  Text("accountName"), 
-            accountEmail: Text("accountEmail"),
-            currentAccountPicture: CircleAvatar(
-            ),
-          ),
-        
         ),
-    
+
+        // Seleccionar lenguaje
         Positioned(
           top: 20,
           right: 20,

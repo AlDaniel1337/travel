@@ -17,7 +17,7 @@ class MenuOption{
 class Routes{
 
   // Rutas disponibles
-  static const String home = HomePage.route;
+  static const String home = WalletPage.route; //HomePage.route;
   
   /// Listado con las rutas de la app
   static List<GetPage> getRoutes(){    
@@ -35,6 +35,9 @@ class Routes{
   //^ ==========[ NAVEGACIÓN ]========== ^\\
   /// Moverse a otra pantalla dejando la anterior en el historial
   static goToPage({required String page}) => Get.toNamed(page);
+  
+  /// Moverse a otra pantalla dejando la anterior en el historial
+  static goToPageOffNamed({required String page}) => Get.offNamed(page);
 
   /// Cerrar y regresar a la pagina anterior
   static goBackToPage({required BuildContext context}) => Navigator.of(context).pop(true);

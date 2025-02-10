@@ -11,14 +11,16 @@ import 'package:get/get.dart';
 class LocaleText extends StatelessWidget {
 
   final String text;
+  final TextStyle? style;
   
   const LocaleText({
     super.key,
-    required this.text,
+    required this.text, 
+    this.style,
   });
   
   @override
   Widget build(BuildContext context) {
-    return Text( text.tr );
+    return Text( text.tr, style: style, );
   }
 }
